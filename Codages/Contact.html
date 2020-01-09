@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+	<script type="text/javascript">
+
+        function showAlert() {
+          var userInputs = document.getElementsByTagName("input");
+          var alertBody = "";
+            Array.prototype.forEach.call(userInputs, function(element) {
+              alertBody += element.value +  "\n ";
+            });
+          alert(alertBody); 
+
+        }
+
+    </script>
 
 	<div class="before-nav">
    		<div id="Welcome"><p>Welcome To our Cleaning Company  &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp</div>
@@ -26,7 +39,7 @@
       	<div class="menu">
 			
       		<ul class="mn">
-        		<a href="#">Home</a>
+        		<a href="Home.html">Home</a>
         		<a href="#">About Us </a>
         		<a href="Services.html">Services</a>
         		<a href="#">Our Work</a>
@@ -60,13 +73,14 @@
  	   
  	    <div class="txtlg">
  	   		<div class="txtcnt">
-				<input type="text" placeholder="First Name *" name="" value="">
+				<input type="text" placeholder="First Name *" name="username" value="">
+				<div id="name_error"></div>
 			</div>
 			<div class="txtcnt">
-				<input type="text" placeholder="Last Name *" name="" value="">
+				<input type="text" placeholder="Last Name *" name="username" value="">
 			</div>
 			<div class="txtcnt">
-				<input type="Email" placeholder="Email *" name="" value="">
+				<input type="Email" placeholder="Email *" name="email" value="">
 			</div>
 			<div class="txtcnt">
 				<input type="text" placeholder="Phone *" name="" value="">
@@ -83,7 +97,7 @@
  	    <div class="para">
  	    	<p>By submitting this form, I give Merry Maids & its franchisees consent to call/text me at my phone number above about offers (	via automated technology). <br>
  	    		Consent is voluntary. Opt out anytime.</p>
- 	    	<div id="sub"><a href="#">Submit</a></div>
+ 	    	<div id="sub"><button onclick="showAlert()">Submit</button></div>
  	   </div>
  	</div>
 
