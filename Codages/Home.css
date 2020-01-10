@@ -103,7 +103,6 @@ body{
 /*Centre*/
 
 .welcome {
- 	background-image: url('photos/home.jpg');
  	width: 100%;
  	height: 600px;
  	background-repeat: no-repeat;
@@ -112,6 +111,10 @@ body{
  	background-position: center;
  	margin-top: 10px;
 
+ }
+ .welcome img{
+ 	width: 100%;
+ 	height: 600px;
  }
 
 .overlay {
@@ -236,6 +239,13 @@ width: 221px;
 .content1 {
 	background-color: #FAFAFA;
 }
+.content1 .devis a{
+	background-color: #38ADA9;
+	color: honeydew;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 10px;
+}
 
 .content2 {
 	display: flex;
@@ -244,8 +254,6 @@ width: 221px;
 	align-items: center;
 	flex-wrap: wrap;
 	margin-top: 40px;
-	
-
 }
 
 .content-all2 {
@@ -254,7 +262,16 @@ width: 221px;
 	font-size: 13px;
 	color: #7C7C7C;
 	padding: 30px;
+	font-family: Poppins, serif;
 
+}
+.content-all2 .devis a{
+	background-color: #38ADA9;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 10px;
+	color: honeydew;
+	font-size: 16px;
 }
 
 .img img {
@@ -271,6 +288,7 @@ width: 221px;
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
+	font-family: Poppins, serif;
 }
 
 
@@ -292,6 +310,7 @@ width: 221px;
 
  .cnt span a {
  	color: #38ADA9;
+ 	text-decoration: none;
  }
 
 	 .content3 {
@@ -324,6 +343,8 @@ width: 221px;
  	padding-left: 70px;
  	padding-right:  70px;
  	font-weight: bold;
+ 	margin-bottom: 80px; 
+ 	border-radius: 10px;
  }
 
 
@@ -334,6 +355,7 @@ width: 221px;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
+	font-family: Poppins, serif;
 }
 
 .projets {
@@ -375,6 +397,8 @@ width: 221px;
 
 #bl {
 	margin-top: 50px;
+	color: #38ADA9;
+	font-family: Poppins, serif;
 }
 
 .blog {
@@ -383,6 +407,7 @@ width: 221px;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	font-family: Poppins, serif;
 
 
 }
@@ -411,6 +436,7 @@ width: 221px;
 	width: 300px;
 
 }
+
 
 
 
@@ -650,10 +676,10 @@ width: 221px;
       justify-content: space-between;
       margin:0;
     padding: 0;
-border-style: groove;
-      border-top: hidden;
-      border-left: hidden;
-      border-right: hidden;
+	border-style: groove;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
   }
   .nav-bar .logo{
     margin: 0;
@@ -663,38 +689,35 @@ border-style: groove;
     margin-top: -75px;
     margin-right: 44px;
   }
-  .all{
-  margin-top: -1px;
+  .cnt h1{
+  	text-align: center;
   }
-  .all .imgtxt img{
-  width: 100%;
-  height: 256px;
-  }
-  .all .imgtxt .text h1{
-  font-size: 33px;
-  position: relative;
-  margin-top: -154px;
-  text-align: center;
-  }
+  .welcome{
+  	width: 100%;
+  	height: 300%;
+  	margin-top: -1px;
 
-  .formcnt .para #sub button{
-    width: 45%;
-    height: 60px;
-    margin-left: 98px;
-    
   }
-  
-  .formcnt{
-    margin: 0 50px;
+   .welcome img{
+ 	width: 100%;
+ 	height: 300px;
+ }
+  .overlay-text{
+  	padding: 0;
+  	margin: 0;
+  	height: 334px;
+    width: 471px;
+  	font-size: 10px;
+  	margin-top: 10px;
+  	margin-left: 20px;
   }
-  .formcnt .centre{
-    margin: 150px 0 0 0;
+  .overlay-text h2{
+  	font-size: 20px;
   }
-  .formcnt .centre .txt{
-    font-size: 20px
-  }
-  .formcnt .para a{
-    font-size: 10px;
+  .overlay .abt-btn{
+  	
+  	font-size: 15px;
+  	padding: -10px;
   }
   
 
