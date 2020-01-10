@@ -1,40 +1,89 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
-  <title></title>
+	<link rel="stylesheet" href="request.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title> request </title>
+	<script type="text/javascript">
+	function myFunction() {
+       var namee = document.getElementById("name").value;
+	   var Address = document.getElementById('Address').value;
+	   var phone = document.getElementById('phone').value;
+	   var mail = document.getElementById('mail').value;
+	   var bedroom1= document.getElementById('bedroom1').value
+	   var livingroom = document.getElementById('livingroom').value;
+	   var Service = document.getElementById('Service').value;
+	   var datetime = document.getElementById('datetime').value;
+	   var time1 = document.getElementById('time1').value;
+	   var time2 = document.getElementById('time2').value;
+	   var name = document.getElementById('datetime').value;
+	     if( namee =="" || Address =="" || phone =="" || mail =="" )
+	  {
+	    alert ("you must type in all the inputs");
+	  }
+         else {
+     function test() {
+		 var radioo;
+		  if (document.getElementById('control_01').checked == true) {
+			  radioo="one time ";
+		  }
+		  else
+		  if (document.getElementById('control_02').checked == true) {
+			radioo="one time every week";
+		  }
+		  else
+		  if (document.getElementById('control_03').checked == true) {
+			radioo="one time every 2 weeks";
+		  }
+		  else 
+		  {
+			radioo="one time every 4 week";
+		  }
+		  return radioo;
+	  }
+	   var infoo = " your name :" + namee  + "\n your address :" + Address + "\n your phone numbre :" + phone
+					+ "\n your E-mail :" + mail + "\n you have :" + bedroom1 + " and  " + livingroom + "\n the service you request is  : " + 
+					Service + "\n  when  :" + datetime + "\n the time is between : " + time1 +  " and  " + time2 + "\n and all that  " + test() ;
+	   alert(infoo);
+	   }
+	}
+  
+	</script>
 </head>
-
 <body>
-  <div class="before-nav">
-    <div>Welcome To our Cleaning Company</div>
-    <div id="info">
-      <p> Phone : +1 354 765 9087 &nbsp &nbsp &nbsp &nbsp Email: </p>
-      <p id=email> info@company.com</p>
 
+	<div class="before-nav">
+   		<div id="Welcome"><p>Welcome To our Cleaning Company  &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp</div>
+   			<div id="info">
+    			<p> Phone : +1 354 765 9087  &nbsp &nbsp &nbsp </p>  
+          		<p id=email>Email: info@company.com</p>
+   			</div>
+ 	</div>
+    <div class="nav-bar">
+    	<img  href="#" class="logo" src="cleaning-website-request/maids.png" alt="">
+
+      		<input type="checkbox" id="chk">
+      		<label id="label" for="chk" class="show-menu-btn">
+				<i style="color: #38ADA9;" class="fas fa-bars"></i>
+			</label>
+      	<div class="menu">
+			
+      		<ul class="mn">
+        		<a href="Home.html">Home</a>
+        		<a href="#">About Us </a>
+        		<a href="#" >Services</a>
+        		<a href="#">Our Work</a>
+        		<a href="#">Pricing</a>
+        		<a href="#">Blog</a>
+        		<a href="Contact.html">Contact</a>
+        		<label for="chk" class="hide-menu-btn"><i style="color: #38ADA9;" class="fas fa-times"></i></label>
+        	</ul>
+        	<div   id="req"><a href="#">Request A Quote</a></div>
+        </div>
     </div>
-  </div>
-  <div class="nav-bar">
-    <img href="#" class="logo" src="cleaning-website-request/maids.png" alt="">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About Us </a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Our Work</a></li>
-      <li><a href="#">Pricing</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Contact </a></li>
-      <li id="req" id="youArehere"><a href="#">Request A Quote</a></li>
-    </ul>
-  </div>
-  <h1> Order Form </h1>
-  <center>
+	<h1> Order Form </h1>
     <div class="container">
       <div class="item1">
         <h3>book your service in 60 seconds </h3>
@@ -44,30 +93,36 @@
           <p> This Information will be used to contact you about your
             service </p>
           <div class="input">
-            <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="Your Address">
+            <input type="text" id="name" placeholder="Your Name"  >
+            <input type="text" id="Address" placeholder="Your Address">
           </div>
           <div class="input">
-            <input type="text" placeholder="Phone numbers">
-            <input type="text" placeholder="E-mail">
+            <input type="text" id="phone" placeholder="Phone numbers">
+            <input type="text" id="mail" placeholder="E-mail">
           </div>
           <hr>
         </div>
-        <h3> Contact Information </h3>
-        <p> This Information will be used to contact you about your
-          service </p>
+        <h3> Home Information </h3>
+        <p> Tell us about your home </p>
         <div class="input">
           <div>
-            <select>
-              <option value="">1 bedroom </option>
-            </select><br>
+            <select id="bedroom1">
+              <option value="1 bedroom">1 bedroom </option>
+              <option value="2 bedrooms">2 bedrooms </option>
+              <option value="3 bedrooms">3 bedrooms </option>
+              
+            </select>
             <center>
               <p>(living room & kitchen included)</p>
             </center>
           </div>
           <div>
-            <select>
-              <option value="">1 bedroom </option>
+            <select id="livingroom">
+              <option value="1 living room">1 living room </option>
+              <option value="2 living rooms">2 living rooms </option>
+              <option value="3 living rooms">3 living rooms </option>
+              <option value="4 living rooms">4 living rooms </option>
+              <option value="5 living rooms">5 living rooms </option>
             </select>
             <br>
             <center>
@@ -80,17 +135,22 @@
 
         <div>
           <select id="Service">
-            <option value="">1 bedroom </option>
+            <option value="House Cleaning Services"> House Cleaning Services </option>
+            <option value="Deep Cleaning"> Deep Cleaning </option>
+            <option value="Move Out Cleaning "> Move Out Cleaning </option>
+            <option value="General Cleaning"> General Cleaning </option>
+            <option value="Vacation Rental Cleaning"> Vacation Rental Cleaning</option>
           </select>
         </div>
         <hr>
         <h3> Service Requested </h3>
         <p> When would you like us to come ?</p>
         <div class="input">
-          <input type="datetime-local">
-          <p id="anytime"> anytime between : </p>
-          <input type="time">
-          <input type="time">
+          <input id="datetime" type="date"> <br>
+
+          <p id="anytime"> anytime between : </p> <br>
+          <input id="time1" type="time">
+          <input id="time2" type="time">
 
         </div>
         <hr>
@@ -101,7 +161,7 @@
         <section>
           <div>
             <input type="radio" id="control_01" name="select" value="1" checked>
-            <label for="control_01">
+            <label class="rad" class="rad" for="control_01">
               <h2 class="radio">One Time Service
                 Daily </h2>
 
@@ -109,89 +169,83 @@
           </div>
           <div>
             <input type="radio" id="control_02" name="select" value="2">
-            <label for="control_02">
-              <h2 class="radio"> Weekly 15.00% Discount</h2 class="radio">
-
+            <label class="rad" for="control_02">
+              <h2 class="radio"> Weekly 15% Discount</h2 class="radio">
             </label>
           </div>
           <div>
             <input type="radio" id="control_03" name="select" value="3">
-            <label for="control_03">
-              <h2 class="radio"> Every 2 weeks 15.00% Discount </h2>
+            <label class="rad" for="control_03">
+              <h2 class="radio"> Every 2 weeks 20% Discount </h2>
 
             </label>
           </div>
           <div>
-            <input type="radio" id="control_04" name="select" value="3">
-            <label for="control_04">
-              <h2 class="radio">Every 4 weeks 20.00% Discount</h2>
-
+            <input type="radio" id="control_04" name="select" value="4">
+            <label class="rad" for="control_04">
+              <h2 class="radio">Every 4 weeks 25% Discount</h2>
             </label>
           </div>
-
-
         </section>
-
-
         <hr>
         <center>
           <p> We will confirm your service request within 24 hours.
-            Thank you very much! </p>
-          <input id="button" type="button" value="Book Now !! ">
+            Thank you very much! </p> <br>
+          <input id="button" type="button" value="Book Now !! " onclick="myFunction()">
         </center>
       </div>
 
       <div class="img">
-        <img src="cleaning-website-request/order-form-img (1).jpg" alt="">
+        <img id="img" src="cleaning-website-request/order-form-img (1).jpg" alt="">
       </div>
 
     </div>
-  </center>
 
-  <div class="footer">
+    <div class="footer">
 
-    <div class="quick view">
-      <h4> quick view </h4>
-      <ul>
-        <li><a>Home</a></li>
-        <li><a>About Us</a></li>
-        <li><a>service</a></li>
-        <li><a>Our works</a></li>
-        <li><a>Quote</a></li>
-      </ul>
-    </div>
-    <div class="service">
-      <h4> Services </h4>
-      <ul>
-        <li><a>Apartment Cleaning</a></li>
-        <li><a>house cleaning</a></li>
-        <li><a>maid</a></li>
-        <li><a>detailed</a></li>
-        <li><a>Specialty Cleaning</a></li>
-      </ul>
-    </div>
-    <div class="contact">
-      <h4> Contact </h4>
-      <ul>
-        <li> Phone: +1 976 988 8776 </li>
-        <li>Email: mail@mail.com </li>
-        <li id="soc">
-          <a class="fa fa-facebook"></a>
-          <a class="fa fa-twitter"></a>
-          <a class="fa fa-instagram"></a>
-          <a class="fa fa-google"></a></li>
-      </ul>
-    </div>
+    	<div class="service">
+    		
+    		<ul>
+    			<h4> quick view </h4>
+      			<li><a href="#">Home</a></li>
+      			<li><a href="#">About Us</a></li>
+      			<li><a href="#">service</a></li>
+      			<li><a href="#">Our works</a></li>
+      			<li><a href="#">Quote</a></li>
+    		</ul>
+    	</div>
+    	<div class="service">
+    		
+    		<ul>
+    			<h4> Services </h4>
+      			<li><a href="#">Apartment Cleaning</a></li>
+      			<li><a href="#">house cleaning</a></li>
+      			<li><a href="#">maid</a></li>
+      			<li><a href="#">detailed</a></li>
+      			<li><a href="#">Specialty Cleaning</a></li>
+    		</ul>
+    	</div>
+    	<div class="service">
+    		
+    		<ul>
+    			<h4> Contact </h4>
+      			<li> Phone: +1 976 988 8776 </li>
+      			<li>Email: mail@mail.com </li>
+      			<li>Fax: +1 342 422 5314</li>
+      			<li id="soc">
+        			<a href="#" class="fa fa-facebook"></a>
+        			<a href="#" class="fa fa-twitter"></a>
+        			<a href="#" class="fa fa-instagram"></a>
+        			<a href="#" class="fa fa-google"></a></li>
+   			</ul>
+    	</div>
 
-  </div>
-  <div class="Contact">
-    <center>
-      <p> &copy; 2020 SportPlus All Rights Reserved
-
-      </p>
-    </center>
-  </div>
+	</div>
+	<div class="Contact"> 
+  		<center>
+			<p>© Copyright 2020 <b> CleanNow </b>, All Right Reserved</p>
+		</center>
+	</div>
 
 </body>
-
 </html>

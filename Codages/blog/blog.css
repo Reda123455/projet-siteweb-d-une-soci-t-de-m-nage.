@@ -1,0 +1,332 @@
+/*Nav-bar*/
+
+
+body{
+    
+    background-color: white;
+    margin: 0;
+    padding: 0;
+
+  }
+.before-nav{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #707070;
+    border-style: groove;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    font-family: poppins,serif;
+      }
+#email{
+    color: #38ADA9;
+      }
+#info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+      
+
+    } 
+.nav-bar{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+    
+    font-family: poppins, serif;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+
+
+
+
+.nav-bar .logo{
+    width: 207px;
+    height: 58px;
+    margin-left: 30px;
+  } 
+.nav-bar ul{
+	width: 500px;
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+.nav-bar .menu{
+	width: 685px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+#youArehere{
+	color: #38ADA9 ;
+  }
+#req{
+    border-radius: 35px;
+    background-color: #38ADA9;
+    padding: 8px;
+    margin: auto;
+  }
+#req a {
+    color: honeydew;
+    text-decoration: none;
+    text-align: center;
+
+  } 
+.nav-bar ul a{
+   text-decoration: none;
+   color: gray;
+   text-align: center;
+   font-family: Poppins;
+
+ 
+  }
+.nav-bar ul a:hover{
+   color: #38ADA9;
+  }
+  .container div {
+	flex: 1;
+	height: auto;
+	margin-bottom: 20PX;
+	
+}
+.mainimg{
+	width: 335px;
+	height: 242px;
+	border-radius: 10px;
+}
+.item7{
+  background-color: cadetblue;
+}
+
+
+/*Centre*/
+h1{
+    font-style: italic;
+    margin-left: 20px;
+    text-align: center;
+    }
+
+.container{
+	display: flex;
+	justify-content : space-between;
+	flex-direction: row;
+	margin: 30px;
+	flex-basis: 1;
+	flex-flow: row wrap;
+  
+}
+body{
+	margin: 0px;
+	background-color: white;
+	font-family: poppins light, Georgia, Times, 'Times New Roman',
+	 light;
+
+}
+.container p{
+  width: 330px;
+}
+.container h3{
+  width: 330px;
+}
+.container h3:hover{
+  color: cornflowerblue;
+
+}
+
+
+#req{
+  border-radius: 17px;
+  background-color: #38ADA9;
+  
+}
+#req a {
+  color: honeydew;
+}
+.container a {
+  color: #1ED278;
+  text-decoration: none;
+}
+.container a:hover {
+  color: blue;
+}
+
+.nav-bar ul li{
+  padding: 15px;
+}
+.nav-bar ul li a{
+text-decoration: none;
+color: gray;
+text-align: center;
+
+}
+.nav-bar ul li:hover{
+  background-color:  #38ADA9;
+  color: #0D0D0D;
+  margin: 4px;
+}
+#youArehere{
+  color: #38ADA9 ;
+}
+
+/*footer*/
+.footer{
+	display: flex;
+	justify-content: space-around;
+	font-family: poppins, serif;
+	margin: 30px 200px;	
+}
+.footer .service ul{
+	list-style-type: none;
+}
+.footer .service ul li a{
+	color: #000;
+	text-decoration: none;
+}
+.Contact{
+	font-family: poppins, serif;
+	font-size: 10px;
+}
+
+
+
+
+
+
+.show-menu-btn, .hide-menu-btn{
+	transition: 0.4s;
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+}
+
+.show-menu-btn{
+	float: right;
+
+}
+.show-menu-btn i{
+	line-height: 100px;
+
+}
+#chk{
+	position: absolute;
+	visibility: hidden;
+	z-index: -1111;
+}
+
+@media screen and (max-width: 500px){
+	.show-menu-btn, .hide-menu-btn{
+		display: block;
+	}
+
+
+	.menu .mn{
+		position: fixed;
+		width: 100%;
+		height: 80vh;
+		background: #333;
+		right: -100%;
+		top: 0;
+		text-align: center;
+		padding: 80px 0;
+		line-height: normal;
+		transition: 0.7s;
+		display: flex;
+		flex-direction: column;
+	}
+	.menu .mn ul a{
+		display: block;
+		margin-top: -10px;
+
+		
+	}
+	.hide-menu-btn{
+		position: absolute;
+		top: 40px;
+		right: 40px;
+	}
+	#chk:checked ~ .menu .mn{
+		right: 0;
+		z-index: 1;
+	}
+	.before-nav{
+		display: none;
+	}
+	.txt{
+		margin: 40px 40px 0 40px;
+	}
+	.nav-bar{
+		margin:0;
+		padding: 0;
+    	justify-content: space-between;
+    	border-style: groove;
+    	border-top: hidden;
+    	border-left: hidden;
+    	border-right: hidden;
+    	
+	}
+	.nav-bar .logo{
+		margin: 0;
+	}
+	#req{
+    position: relative;
+    margin-top: -71px;
+    margin-right: 44px;
+    }
+	.list{
+		font-size: 8.81px;
+		margin: 0 0 50px 0;
+		padding: 0;
+
+	}
+	.list .list2{
+		margin: 0;
+		padding: 0;
+	}
+	.img{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.too{
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+
+	}
+	.too .txtimg{
+		display: flex;
+		flex-direction: column;
+	}
+	section{
+		margin: 0;
+		align-items: center;
+	}
+	.footer{
+		margin:50px 50px 0 0;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	.img{
+		margin: 0 0 50px 0;
+	}
+	.img .img1{
+		width: 99%;
+	}
+
+
+}
+	
