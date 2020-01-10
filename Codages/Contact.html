@@ -10,15 +10,32 @@
 <body>
 	<script type="text/javascript">
 
-        function showAlert() {
-          var userInputs = document.getElementsByTagName("input");
-          var alertBody = "";
-            Array.prototype.forEach.call(userInputs, function(element) {
-              alertBody += element.value +  "\n ";
-            });
-          alert(alertBody); 
+        function checkInput(type){
+    let input = document.getElementById(type);
+    if(type === 'name'){
+        // check for a valid full name contain at lease 3 characters
+        markError(/^([A-Za-z]{3,})+([\s[A-Za-z]?]?)+$/.test(input.value), input, type);
+    }else if(type === 'email'){
+        // check for a valid email
+        markError(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(input.value), input,type);
+    }else if( type === 'subject'){
+        // subject must be 5 or more characters
+        markError(input.value.length >= 5, input, type);
+    }else if(type === 'message'){
+        // message must be 10 or more characters
+        markError(input.value.length >= 10, input, type);
+    }
+}
 
+function markError(state,input, type){
+        if(!state){
+            input.style.borderBottomColor = "Tomato";
+            document.getElementById("warning-"+type).style.display = "block";
+        }else{
+            input.style.borderBottomColor = "MediumSeaGreen";
+            document.getElementById("warning-"+type).style.display = "none";
         }
+}
 
     </script>
 
@@ -26,7 +43,7 @@
    		<div id="Welcome"><p>Welcome To our Cleaning Company  &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp</div>
    			<div id="info">
     			<p> Phone : +1 354 765 9087  &nbsp &nbsp &nbsp </p>  
-          		<p id=email>Email: info@company.com</p>
+          		<p id=emailTop>Email: info@company.com</p>
    			</div>
  	</div>
     <div class="nav-bar">
@@ -70,33 +87,37 @@
  	  		 	<h2>+1 234 567 9332</h2>
  	  		 </div>
 		</div>
- 	   
- 	    <div class="txtlg">
- 	   		<div class="txtcnt">
-				<input type="text" placeholder="First Name *" name="username" value="">
-				<div id="name_error"></div>
-			</div>
-			<div class="txtcnt">
-				<input type="text" placeholder="Last Name *" name="username" value="">
-			</div>
-			<div class="txtcnt">
-				<input type="Email" placeholder="Email *" name="email" value="">
-			</div>
-			<div class="txtcnt">
-				<input type="text" placeholder="Phone *" name="" value="">
-			</div>
-			<div class="txtcnt">
-				<h4 id="FA">Full Address *</h4>
-				<input type="text" placeholder="Indiquez un lieu" name="" value="">
-			</div>
-			<div class="txtcnt1">
-				<h4 id="FA">Comments</h4>
-				<input id="IL" type="text" placeholder="Please explain." name="" value="">
-			</div>
- 	    </div>
+	<div class="allinp">
+				<div class="ttt">
+ 	    			<div class="input">
+                        <input onkeyup="checkInput('name');" type="text" name="name" id="name" placeholder="Name *" />
+                        <div class="warning" id="warning-name"><i class="fas fa-exclamation-triangle"></i>valid name must be at least 3 characters, numbers are not allowed</div>
+                    </div>
+                    <div class="input">
+                        
+                        <input onkeyup="checkInput('email');" type="email" name="email" id="email" placeholder="Email *" />
+                        <div class="warning" id="warning-email"><i class="fas fa-exclamation-triangle"></i>You must type a valid email</div>
+                    </div>
+                
+                	<div class="input">
+                    
+                    <input onkeyup="checkInput('subject');" type="text" name="subject" id="subject" placeholder="Subject *" />
+					<div class="warning" id="warning-subject"><i class="fas fa-exclamation-triangle"></i>Your subject must be 5 character or more</div>
+                	</div>
+                </div>	
+                <div class="ccc">
+                	<div class="input">
+                    
+                    <textarea onkeyup="checkInput('message');" name="message" id="message" placeholder="Message"></textarea>
+                    <div class="warning" id="warning-message"><i class="fas fa-exclamation-triangle"></i>Your message must be 10 character or more</div>
+                	</div>
+                </div>
+
+ 	</div>
  	    <div class="para">
- 	    	<p>By submitting this form, I give Merry Maids & its franchisees consent to call/text me at my phone number above about offers (	via automated technology). <br>
- 	    		Consent is voluntary. Opt out anytime.</p>
+ 	    	<p>By submitting this form, I give Merry Maids & its franchisees consent to call/text 
+				me at my phone number above about offers (via automated technology). 
+				Consent is voluntary. Opt out anytime.</p>
  	    	<div id="sub"><button onclick="showAlert()">Submit</button></div>
  	   </div>
  	</div>
