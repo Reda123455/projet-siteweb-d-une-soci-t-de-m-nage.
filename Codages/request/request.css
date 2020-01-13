@@ -1,6 +1,6 @@
 /*Nav-bar*/
 
-
+/* 
 body{
     
     background-color: white;
@@ -256,6 +256,7 @@ h1 {
 section {
   display: flex;
   flex-flow: row wrap;
+  margin-top: 15px;
 }
 
 section > div {
@@ -322,7 +323,7 @@ p {
 }
 
 /*footer*/
-.footer{
+/* .footer{
 	display: flex;
 	justify-content: space-around;
 	font-family: poppins, serif;
@@ -364,7 +365,7 @@ p {
 	position: absolute;
 	visibility: hidden;
 	z-index: -1111;
-}
+} */
 
 @media screen and (max-width: 680px){
 	.show-menu-btn, .hide-menu-btn{
@@ -512,7 +513,7 @@ p {
 		align-items: center;
 	}
 	.footer{
-		margin:50px 50px 0 0;
+		
 		display: flex;
 		flex-direction: column;
 		text-align: center;
@@ -540,7 +541,12 @@ p {
         width: 90%;
         align-items: center;
         flex-wrap: wrap;
+        margin-right: 15px;
+        margin-left: 15px;
     }
+    #button {
+     margin-bottom: 10%;
+  }
     .footer{
       width: auto;
     }
@@ -585,4 +591,3 @@ p {
 
     
   }
-	

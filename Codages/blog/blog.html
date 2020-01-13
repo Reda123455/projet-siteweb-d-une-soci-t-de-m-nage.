@@ -3,41 +3,51 @@
 <head>
 	<title>Services</title>
 	
-    <link rel="stylesheet" href="blog.css">
+	<link rel="stylesheet" href="blog.css">
+	<link rel="stylesheet" href="css/style menu.css">
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-	<div class="before-nav">
-   		<div id="Welcome"><p>Welcome To our Cleaning Company  &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp</div>
-   			<div id="info">
-    			<p> Phone : +1 354 765 9087  &nbsp &nbsp &nbsp </p>  
-          		<p id=email>Email: info@company.com</p>
-   			</div>
- 	</div>
-    <div class="nav-bar">
-    	<img  href="#" class="logo" src="cleaning-website-blog/maids.png" alt="">
+	   <!-------------------------------  Navigation top ------------------------------------------->
 
-      		<input type="checkbox" id="chk">
-      		<label for="chk" class="show-menu-btn">
-				<i style="color: #38ADA9;" class="fas fa-bars"></i>
-			</label>
-      	<div class="menu">
-			
-      		<ul class="mn">
-        		<a href="Home.html">Home</a>
-        		<a href="#">About Us </a>
-        		<a href="#" id="youArehere" >Services</a>
-        		<a href="#">Our Work</a>
-        		<a href="#">Pricing</a>
-        		<a href="#">Blog</a>
-        		<a href="Contact.html">Contact</a>
-        		<label for="chk" class="hide-menu-btn"><i style="color: #38ADA9;" class="fas fa-times"></i></label>
-        	</ul>
-        	<div id="req"><a href="#">Request A Quote</a></div>
+	   <nav class="navtop">
+        <div class="welcome">
+          <p>Welcome To our Cleaning Company</p>
         </div>
-    </div>
+        <div class="phone">
+            <p>Phone: +1 342 422 9029  Email:<span class="email"> info@company.com</span></p>
+        </div>
+      </nav>
+
+      <!--------------x--------------  Navigation top --------------------------x---------------->
+
+      <!-----------------------------  Start Menu ----------------------------------------------->
+
+      <div class="header">
+        <h2 class="logo"><img src="img/logo.png"></h2>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-menu-btn">
+          <i class="fas fa-ellipsis-h"></i>
+        </label>
+    
+        <ul class="menu">
+            <a href="#Home">Home</a>
+            <a class="active" href="#About Us">About Us</a>
+            <a href="#Services">Services</a>
+            <a href="#Our Works">Our Works</a>
+            <a href="#Pricing">Pricing</a>
+            <a href="#Blog">Blog</a>
+            <a href="#Contact">Contact</a>
+            <a href="#Request A Quote" class="act">Request A Quote</a>
+            <label for="chk" class="hide-menu-btn">
+              <i class="fas fa-times"></i>
+            </label>
+          </ul>
+      </div>
+
+    <!--------------X---------------  End Menu -----------------X------------------------------>
 	<h1> BLOG</h1>
 	<div class="container">
 		   <div class="item1">
@@ -82,51 +92,55 @@
 	 </div>
 
 
-    <div class="footer">
-
-    	<div class="service">
-    		
-    		<ul>
-    			<h4> quick view </h4>
-      			<li><a href="#">Home</a></li>
-      			<li><a href="#">About Us</a></li>
-      			<li><a href="#">service</a></li>
-      			<li><a href="#">Our works</a></li>
-      			<li><a href="#">Quote</a></li>
-    		</ul>
-    	</div>
-    	<div class="service">
-    		
-    		<ul>
-    			<h4> Services </h4>
-      			<li><a href="#">Apartment Cleaning</a></li>
-      			<li><a href="#">house cleaning</a></li>
-      			<li><a href="#">maid</a></li>
-      			<li><a href="#">detailed</a></li>
-      			<li><a href="#">Specialty Cleaning</a></li>
-    		</ul>
-    	</div>
-    	<div class="service">
-    		
-    		<ul>
-    			<h4> Contact </h4>
-      			<li> Phone: +1 976 988 8776 </li>
-      			<li>Email: mail@mail.com </li>
-      			<li>Fax: +1 342 422 5314</li>
-      			<li id="soc">
-        			<a href="#" class="fa fa-facebook"></a>
-        			<a href="#" class="fa fa-twitter"></a>
-        			<a href="#" class="fa fa-instagram"></a>
-        			<a href="#" class="fa fa-google"></a></li>
-   			</ul>
-    	</div>
-
-	</div>
-	<div class="Contact"> 
-  		<center>
-			<p>© Copyright 2020 <b> CleanNow </b>, All Right Reserved</p>
-		</center>
-	</div>
+     <!------------------------------- start Footer -------------------------------------------->
+<footer>
+	<div class="footer">
+  
+	  <div class="service">
+		
+		<ul>
+		  <h4> quick view </h4>
+			<li><a >Home</a></li>
+			<li><a >About Us</a></li>
+			<li><a >service</a></li>
+			<li><a >Our works</a></li>
+			<li><a >Quote</a></li>
+		</ul>
+	  </div>
+	  <div class="service">
+		
+		<ul>
+		  <h4> Services </h4>
+			<li><a >Apartment Cleaning</a></li>
+			<li><a >house cleaning</a></li>
+			<li><a >maid</a></li>
+			<li><a >detailed</a></li>
+			<li><a >Specialty Cleaning</a></li>
+		</ul>
+	  </div>
+	  <div class="service">
+  
+		<ul>
+		  <h4> Contact </h4>
+			<li> Phone: +1 976 988 8776 </li>
+			<li>Email: mail@mail.com </li>
+			<li>Fax: +1 342 422 5314</li>
+			<li id="soc">
+			  <a href="#" class="fa fa-facebook"></a>
+			  <a href="#" class="fa fa-twitter"></a>
+			  <a href="#" class="fa fa-instagram"></a>
+			  <a href="#" class="fa fa-google"></a></li>
+		   </ul>
+	  </div>
+  
+  </div>
+  <div class="Contact"> 
+	  <center>
+	  <p>© Copyright 2020 <b> CleanNow </b>, All Right Reserved</p>
+	</center>
+  </div>
+  </footer>
+  <!----------X------------------- End Footer -----------------------X---------->
 
 </body>
 </html>
