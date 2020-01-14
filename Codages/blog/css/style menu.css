@@ -49,8 +49,8 @@
     overflow: hidden;
     padding: 0 20px;
     color: rgb(5, 4, 4);
-    border: 1px solid;
-    border-color: rgba(0, 0, 0, 0.062);
+    border-top: 1px solid;
+    border-color: rgba(0, 0, 0, 0.156);
   }
   .logo img{
     margin-top: 10px;  
@@ -162,7 +162,7 @@
   /*-------- start footer ----------*/
 
 .footer{
-  background-color: #ffffff;
+  background-color: #fafafa;
   padding: 30px;
   display: flex;
   justify-content: space-around;
