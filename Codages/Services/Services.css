@@ -9,7 +9,10 @@
     
   }
 
-
+  a{
+    text-decoration: none;
+    color: black;
+}
 
 /* ------- Start Navigation --------- */
   .navtop{

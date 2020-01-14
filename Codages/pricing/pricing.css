@@ -9,7 +9,10 @@
     box-sizing: border-box;
   }
   
-  
+  a{
+    text-decoration: none;
+    color: black;
+}
   
   /* ------- Start Navigation --------- */
   .navtop{
