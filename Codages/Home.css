@@ -634,7 +634,7 @@ width: 221px;
 
 
 
- @media screen and (max-width: 500px){
+ @media screen and (max-width: 934px){
   .show-menu-btn, .hide-menu-btn{
     display: block;
   }
