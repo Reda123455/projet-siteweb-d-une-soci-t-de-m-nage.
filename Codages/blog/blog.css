@@ -96,23 +96,27 @@
 .nav-bar ul a:hover{
    color: #38ADA9;
   }
-  .container div {
+ 
+
+ */
+
+
+/*Centre*/
+
+ .item7{
+  background-color: cadetblue;
+}
+.container div {
 	flex: 1;
 	height: auto;
 	margin-bottom: 20PX;
 	
 }
 .mainimg{
-	width: 335px;
-	height: 242px;
+	width: 365px;
+    height: 250px;
 	border-radius: 10px;
 }
-.item7{
-  background-color: cadetblue;
-} */
-
-
-/*Centre*/
 h1{
     font-style: italic;
     margin-left: 20px;
@@ -145,8 +149,6 @@ body{
   color: cornflowerblue;
 
 }
-
-
 #req{
   border-radius: 17px;
   background-color: #38ADA9;
@@ -182,11 +184,6 @@ text-align: center;
 }
 
 /*footer*/
-
-
-
-
-
 
 
 .show-menu-btn, .hide-menu-btn{
